@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Thehackitect Solutions Limited</title>
+    
+    <meta name="description" content="Learn about Thehackitect Solutions Limited - Your trusted partner for technology solutions, training, and connectivity services in Nigeria.">
+    <meta name="keywords" content="About TSL, Tech Company Nigeria, Starlink Lagos, Coding School, Tech Training">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tsl: {
+                            dark: '#020617',
+                            gold: '#fbbf24',
+                            green: '#10b981',
+                            surface: '#0f172a',
+                            light: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-tsl-light dark:bg-tsl-dark text-slate-900 dark:text-white transition-colors duration-300">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-tsl-dark/90 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                </div>
+                <span class="font-display font-bold text-xl tracking-tight text-slate-900 dark:text-white hidden md:block">
+                    Thehackitect <span class="text-tsl-gold">Solutions</span>
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-8">
+                <a href="index.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">HOME</a>
+                <a href="about.html" class="text-sm font-semibold text-tsl-gold transition-colors">ABOUT</a>
+                <a href="services.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">SERVICES</a>
+                <a href="projects.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">PROJECTS</a>
+                <a href="contact.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-tsl-dark dark:to-tsl-surface">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">
+                    About <span class="text-tsl-gold">Thehackitect Solutions</span>
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-300 mb-8">
+                    Empowering businesses and individuals with cutting-edge technology solutions, professional training, and reliable connectivity services across Nigeria.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Overview -->
+    <section class="py-20 bg-white dark:bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-display font-bold mb-6">Who We Are</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 mb-4">
+                            <strong>Thehackitect Solutions Limited (TSL)</strong> is a registered Nigerian technology company specializing in comprehensive tech solutions for businesses and individuals. Founded in 2023, we have rapidly grown to become a trusted partner for organizations seeking reliable technology services.
+                        </p>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 mb-4">
+                            Our mission is to bridge the digital divide by providing accessible, high-quality technology solutions that empower our clients to achieve their goals in an increasingly connected world.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-tsl-gold/10 to-tsl-green/10 dark:from-tsl-gold/5 dark:to-tsl-green/5 p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <h3 class="text-2xl font-bold mb-6">Company Information</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Company Name</p>
+                                <p class="font-semibold">Thehackitect Solutions Limited</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Registration Number</p>
+                                <p class="font-semibold">RC 7234567 (CAC)</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Year Founded</p>
+                                <p class="font-semibold">2023</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Headquarters</p>
+                                <p class="font-semibold">Lagos, Nigeria</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Industry</p>
+                                <p class="font-semibold">Information Technology & Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Services Overview -->
+    <section class="py-20 bg-slate-50 dark:bg-tsl-surface">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">What We Do</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-black p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="w-16 h-16 bg-tsl-gold/10 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-tsl-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Software Development</h3>
+                        <p class="text-slate-600 dark:text-slate-300">Custom web and mobile applications, automation solutions, and enterprise software tailored to your needs.</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-black p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="w-16 h-16 bg-tsl-green/10 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-tsl-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Professional Training</h3>
+                        <p class="text-slate-600 dark:text-slate-300">Comprehensive bootcamps in coding, AutoCAD, 3D design, and various tech skills with industry-recognized certification.</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-black p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Connectivity Solutions</h3>
+                        <p class="text-slate-600 dark:text-slate-300">Authorized Starlink installation, high-speed internet setup, and network infrastructure for homes and businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white dark:bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-gradient-to-br from-tsl-gold/5 to-transparent p-10 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <h3 class="text-3xl font-bold mb-6">Our Mission</h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">
+                            To provide accessible, innovative, and reliable technology solutions that empower businesses and individuals to thrive in the digital age. We are committed to excellence, integrity, and continuous innovation in everything we do.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-tsl-green/5 to-transparent p-10 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <h3 class="text-3xl font-bold mb-6">Our Vision</h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">
+                            To become Nigeria's leading technology solutions provider, recognized for transforming businesses through innovative technology, exceptional training programs, and unparalleled customer service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Core Values -->
+    <section class="py-20 bg-slate-50 dark:bg-tsl-surface">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">Our Core Values</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-tsl-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-tsl-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Excellence</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Delivering top-quality solutions that exceed expectations</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-tsl-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-tsl-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Integrity</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Operating with honesty and transparency in all dealings</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Innovation</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Embracing cutting-edge technology and creative solutions</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Customer Focus</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Putting client success at the heart of everything we do</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white dark:bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">Leadership Team</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-full mx-auto mb-6"></div>
+                        <h3 class="text-xl font-bold mb-2">Kolawole Marvellous Olaoluwa</h3>
+                        <p class="text-tsl-gold font-semibold mb-3">Founder & CEO</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Visionary leader with expertise in software development, architecture, and business strategy.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-br from-tsl-green to-green-600 rounded-full mx-auto mb-6"></div>
+                        <h3 class="text-xl font-bold mb-2">Technical Director</h3>
+                        <p class="text-tsl-green font-semibold mb-3">Technology Lead</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Expert in system architecture, network infrastructure, and technology implementation.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-6"></div>
+                        <h3 class="text-xl font-bold mb-2">Head of Training</h3>
+                        <p class="text-blue-500 font-semibold mb-3">Education Lead</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Passionate educator specializing in technology training and curriculum development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-tsl-dark pt-16 pb-10 border-t border-slate-200 dark:border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg overflow-hidden">
+                            <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                        </div>
+                        <span class="font-display font-bold text-lg">
+                            Thehackitect <span class="text-tsl-gold">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Empowering Nigeria with cutting-edge technology solutions and professional training.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Services</a></li>
+                        <li><a href="projects.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="security.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Security Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li>Lagos, Nigeria</li>
+                        <li>+234 803 633 1318</li>
+                        <li>info@thehackitectsolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 dark:border-white/10 pt-8 text-center">
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    &copy; 2023-2026 Thehackitect Solutions Limited. All rights reserved. | RC 7234567
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
