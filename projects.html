@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Thehackitect Solutions Limited</title>
+    
+    <meta name="description" content="Explore our portfolio of successful projects including web development, mobile apps, training programs, and connectivity solutions.">
+    <meta name="keywords" content="Tech Projects Nigeria, Web Development Portfolio, Mobile Apps, IT Training, Starlink Installation">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tsl: {
+                            dark: '#020617',
+                            gold: '#fbbf24',
+                            green: '#10b981',
+                            surface: '#0f172a',
+                            light: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-tsl-light dark:bg-tsl-dark text-slate-900 dark:text-white transition-colors duration-300">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-tsl-dark/90 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                </div>
+                <span class="font-display font-bold text-xl tracking-tight text-slate-900 dark:text-white hidden md:block">
+                    Thehackitect <span class="text-tsl-gold">Solutions</span>
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-8">
+                <a href="index.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">HOME</a>
+                <a href="about.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">ABOUT</a>
+                <a href="services.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">SERVICES</a>
+                <a href="projects.html" class="text-sm font-semibold text-tsl-gold transition-colors">PROJECTS</a>
+                <a href="contact.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold transition-colors">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-tsl-dark dark:to-tsl-surface">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">
+                    Our <span class="text-tsl-gold">Projects</span>
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-300 mb-8">
+                    Discover our portfolio of successful projects that have transformed businesses and empowered individuals across Nigeria. From enterprise solutions to innovative startups, we deliver excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Grid -->
+    <section class="py-20 bg-white dark:bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project 1: E-Commerce Platform -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-tsl-gold transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-tsl-gold/20 to-yellow-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-tsl-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-tsl-gold/10 text-tsl-gold text-xs font-bold px-3 py-1 rounded-full mb-3">WEB DEVELOPMENT</div>
+                            <h3 class="text-xl font-bold mb-3">E-Commerce Platform</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                Comprehensive online marketplace with payment integration, inventory management, and customer analytics for a leading retail brand.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">React</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Node.js</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Mobile Banking App -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-tsl-green transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-tsl-green/20 to-green-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-tsl-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-tsl-green/10 text-tsl-green text-xs font-bold px-3 py-1 rounded-full mb-3">MOBILE APP</div>
+                            <h3 class="text-xl font-bold mb-3">Mobile Banking App</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                Secure mobile banking solution with biometric authentication, instant transfers, bill payments, and real-time notifications.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Flutter</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Firebase</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Corporate Training Program -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-blue-500 transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-blue-500/20 to-blue-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-blue-500/10 text-blue-500 text-xs font-bold px-3 py-1 rounded-full mb-3">TRAINING</div>
+                            <h3 class="text-xl font-bold mb-3">Corporate Training Program</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                6-month intensive coding bootcamp for 50+ employees at a major corporation, covering full-stack development and agile methodologies.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">JavaScript</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Python</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Enterprise Starlink Installation -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-purple-500 transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-purple-500/20 to-purple-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-purple-500/10 text-purple-500 text-xs font-bold px-3 py-1 rounded-full mb-3">CONNECTIVITY</div>
+                            <h3 class="text-xl font-bold mb-3">Enterprise Starlink Setup</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                Complete Starlink installation and network configuration for a 5-story office building, providing high-speed internet for 200+ employees.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Starlink</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Networking</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: Business Automation System -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-tsl-gold transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-orange-500/20 to-orange-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-orange-500/10 text-orange-500 text-xs font-bold px-3 py-1 rounded-full mb-3">AUTOMATION</div>
+                            <h3 class="text-xl font-bold mb-3">Business Automation System</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                Custom automation solution streamlining inventory management, invoicing, and customer relationship management for manufacturing company.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Python</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">PostgreSQL</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6: Social Media Campaign -->
+                    <div class="group bg-slate-50 dark:bg-tsl-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-pink-500 transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-pink-500/20 to-pink-600/20 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block bg-pink-500/10 text-pink-500 text-xs font-bold px-3 py-1 rounded-full mb-3">SOCIAL MEDIA</div>
+                            <h3 class="text-xl font-bold mb-3">Brand Social Campaign</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">
+                                Comprehensive social media management and growth strategy resulting in 300% increase in engagement and 10,000+ new followers.
+                            </p>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Instagram</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Content</span>
+                                <span class="text-xs bg-white dark:bg-black px-3 py-1 rounded-full border border-slate-200 dark:border-white/10">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-br from-tsl-gold/10 to-tsl-green/10 dark:from-tsl-gold/5 dark:to-tsl-green/5">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">Our Impact</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-5xl font-display font-bold text-tsl-gold mb-2">50+</div>
+                        <p class="text-slate-600 dark:text-slate-300">Completed Projects</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-display font-bold text-tsl-green mb-2">100+</div>
+                        <p class="text-slate-600 dark:text-slate-300">Students Trained</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-display font-bold text-blue-500 mb-2">30+</div>
+                        <p class="text-slate-600 dark:text-slate-300">Happy Clients</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-display font-bold text-purple-500 mb-2">99%</div>
+                        <p class="text-slate-600 dark:text-slate-300">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-20 bg-white dark:bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-slate-50 dark:bg-tsl-surface p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">
+                            "The e-commerce platform TSL built for us exceeded all expectations. Sales increased by 250% in the first quarter. Their team is professional, responsive, and truly understands business needs."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-full"></div>
+                            <div>
+                                <p class="font-bold">Adebayo Oluwaseun</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">CEO, RetailHub Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 dark:bg-tsl-surface p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">
+                            "Our staff training program was transformative. TSL not only taught coding skills but also built confidence and problem-solving abilities. Highly recommended for corporate training."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-tsl-green to-green-600 rounded-full"></div>
+                            <div>
+                                <p class="font-bold">Chioma Nwosu</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">HR Director, TechCorp Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 dark:bg-tsl-surface p-8 rounded-2xl border border-slate-200 dark:border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            <svg class="w-5 h-5 text-tsl-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">
+                            "Seamless Starlink installation! Our entire office now enjoys lightning-fast internet. TSL handled everything professionally from planning to implementation. Worth every naira."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
+                            <div>
+                                <p class="font-bold">Ibrahim Mohammed</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Operations Manager, Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-tsl-gold/10 to-tsl-green/10 dark:from-tsl-gold/5 dark:to-tsl-green/5">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                    Ready to Start Your <span class="text-tsl-gold">Next Project?</span>
+                </h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 mb-8">
+                    Let's discuss how we can help transform your business with innovative technology solutions.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="contact.html" class="px-8 py-4 bg-tsl-gold text-white font-bold rounded-xl hover:bg-yellow-600 transition-all shadow-lg hover:shadow-xl">
+                        Get Started
+                    </a>
+                    <a href="services.html" class="px-8 py-4 bg-white dark:bg-tsl-surface text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-100 dark:hover:bg-tsl-dark transition-all border border-slate-200 dark:border-white/10">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-tsl-dark pt-16 pb-10 border-t border-slate-200 dark:border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg overflow-hidden">
+                            <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                        </div>
+                        <span class="font-display font-bold text-lg">
+                            Thehackitect <span class="text-tsl-gold">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Empowering Nigeria with cutting-edge technology solutions and professional training.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Services</a></li>
+                        <li><a href="projects.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="security.html" class="text-slate-600 dark:text-slate-400 hover:text-tsl-gold transition-colors">Security Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li>Lagos, Nigeria</li>
+                        <li>+234 803 633 1318</li>
+                        <li>info@thehackitectsolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 dark:border-white/10 pt-8 text-center">
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    &copy; 2023-2026 Thehackitect Solutions Limited. All rights reserved. | RC 7234567
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

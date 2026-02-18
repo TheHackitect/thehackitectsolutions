@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Policy | Thehackitect Solutions Limited</title>
+    
+    <meta name="description" content="Security Policy for Thehackitect Solutions Limited. Learn about our comprehensive security measures, data protection practices, and vulnerability reporting procedures.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tsl: {
+                            dark: '#020617',
+                            darker: '#010409',
+                            gold: '#fbbf24',
+                            green: '#10b981',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-tsl-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-tsl-dark/90 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg flex items-center justify-center font-bold text-xl text-black shadow-lg shadow-tsl-gold/20 overflow-hidden relative group">
+                    <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                </div>
+                <span class="font-display font-bold text-xl tracking-tight text-slate-900 dark:text-white hidden md:block">
+                    Thehackitect <span class="text-tsl-gold">Solutions</span>
+                </span>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold dark:hover:text-tsl-gold transition-colors uppercase tracking-wider">
+                    Home
+                </a>
+                <button id="themeToggle" class="p-2 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            
+            <!-- Header -->
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-full mb-6">
+                    <i data-lucide="shield" class="w-4 h-4 text-blue-500"></i>
+                    <span class="text-sm font-semibold text-blue-500 uppercase tracking-wider">Security & Protection</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-display font-bold mb-6 text-slate-900 dark:text-white">
+                    Security Policy
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-4">
+                    Thehackitect Solutions Limited (RC 7234567)
+                </p>
+                <p class="text-slate-600 dark:text-slate-400">
+                    <strong>Effective Date:</strong> January 1, 2024<br>
+                    <strong>Last Updated:</strong> January 1, 2024<br>
+                    <strong>Version:</strong> 1.0
+                </p>
+            </div>
+
+            <!-- Introduction -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-4 text-slate-900 dark:text-white">Introduction</h2>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    At Thehackitect Solutions Limited ("TSL"), security is fundamental to everything we do. This Security Policy outlines our comprehensive approach to protecting the confidentiality, integrity, and availability of our systems, infrastructure, and the sensitive data entrusted to us by our clients and stakeholders.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    As a Nigerian technology company registered under RC 7234567, we are committed to maintaining the highest security standards in compliance with the Nigeria Data Protection Regulation (NDPR), international best practices, and industry-recognized security frameworks.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    This policy applies to all TSL employees, contractors, partners, systems, networks, and services. We continuously evolve our security practices to address emerging threats and maintain robust protection for our clients' digital assets.
+                </p>
+            </section>
+
+            <!-- 1. Information Security Framework -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="layers" class="w-6 h-6 text-tsl-gold"></i>
+                    1. Information Security Framework
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    Our security program is built on industry-leading frameworks and standards:
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">ISO 27001 Principles</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Information security management system best practices</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">NDPR Compliance</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Full adherence to Nigerian data protection regulations</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">OWASP Guidelines</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Web application security top 10 mitigation strategies</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">NIST Framework</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Cybersecurity framework for risk management</p>
+                    </div>
+                </div>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-6">
+                    Our security framework encompasses five core pillars: Identify, Protect, Detect, Respond, and Recover. We implement defense-in-depth strategies with multiple layers of security controls to safeguard against sophisticated threats.
+                </p>
+            </section>
+
+            <!-- 2. Data Security Measures -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="database" class="w-6 h-6 text-tsl-gold"></i>
+                    2. Data Security Measures
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">2.1 Data Classification</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                            We classify all data into four categories based on sensitivity:
+                        </p>
+                        <ul class="space-y-2 ml-4">
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-red-500 mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <strong class="text-slate-900 dark:text-white">Critical:</strong>
+                                    <span class="text-slate-700 dark:text-slate-300"> Payment information, authentication credentials, personal identification numbers (highest protection)</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <strong class="text-slate-900 dark:text-white">Confidential:</strong>
+                                    <span class="text-slate-700 dark:text-slate-300"> Client contracts, proprietary software code, business strategies</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500 mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <strong class="text-slate-900 dark:text-white">Internal:</strong>
+                                    <span class="text-slate-700 dark:text-slate-300"> Employee information, internal communications, operational data</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <strong class="text-slate-900 dark:text-white">Public:</strong>
+                                    <span class="text-slate-700 dark:text-slate-300"> Marketing materials, published content, public website information</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">2.2 Data Storage Security</h3>
+                        <div class="bg-slate-50 dark:bg-tsl-dark rounded-lg p-4 space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="hard-drive" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-white">Encrypted Storage</p>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">All data at rest is encrypted using AES-256 encryption standard</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="server" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-white">Secure Infrastructure</p>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Data hosted in secure, tier-III certified data centers with redundancy and backup systems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="folder-lock" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-white">Database Security</p>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Database encryption, parameterized queries, and SQL injection protection</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="archive" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-white">Automated Backups</p>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Daily encrypted backups with 30-day retention and off-site storage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">2.3 Data Retention and Disposal</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We retain data only as long as necessary for business and legal purposes. Obsolete data is securely disposed using cryptographic erasure for digital data and certified shredding for physical media. Disposal activities are logged and auditable.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Encryption Practices -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="key" class="w-6 h-6 text-tsl-gold"></i>
+                    3. Encryption Practices
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">3.1 Data in Transit</h3>
+                        <div class="space-y-3">
+                            <div class="border-l-4 border-tsl-green pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">TLS 1.3 Encryption</p>
+                                <p class="text-slate-700 dark:text-slate-300">All data transmitted over networks uses TLS 1.3 (Transport Layer Security) with strong cipher suites. We enforce HTTPS for all web communications.</p>
+                            </div>
+                            <div class="border-l-4 border-tsl-green pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">Certificate Pinning</p>
+                                <p class="text-slate-700 dark:text-slate-300">Mobile and desktop applications implement certificate pinning to prevent man-in-the-middle attacks.</p>
+                            </div>
+                            <div class="border-l-4 border-tsl-green pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">VPN Security</p>
+                                <p class="text-slate-700 dark:text-slate-300">Remote access to internal systems requires VPN connections with multi-factor authentication.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">3.2 Data at Rest</h3>
+                        <div class="space-y-3">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">AES-256 Encryption</p>
+                                <p class="text-slate-700 dark:text-slate-300">All stored data is encrypted using Advanced Encryption Standard (AES) with 256-bit keys.</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">Field-Level Encryption</p>
+                                <p class="text-slate-700 dark:text-slate-300">Highly sensitive fields (passwords, payment details) receive additional field-level encryption.</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-semibold text-slate-900 dark:text-white">Key Management</p>
+                                <p class="text-slate-700 dark:text-slate-300">Encryption keys are managed using Hardware Security Modules (HSMs) and rotated regularly according to best practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">3.3 Password Security</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            User passwords are hashed using bcrypt or Argon2 with per-user salts. We never store passwords in plaintext or reversible encryption. Password policies enforce minimum complexity requirements: minimum 12 characters, mix of uppercase, lowercase, numbers, and special characters.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Access Controls -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="lock" class="w-6 h-6 text-tsl-gold"></i>
+                    4. Access Controls and Authentication
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">4.1 Principle of Least Privilege</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Access rights are granted based on the minimum level required to perform job functions. Users receive only the permissions necessary for their role, reducing potential attack surfaces. Access is reviewed quarterly and immediately revoked upon role changes or termination.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">4.2 Multi-Factor Authentication (MFA)</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                            MFA is mandatory for:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                            <li>All administrative and privileged accounts</li>
+                            <li>Access to production systems and databases</li>
+                            <li>Remote access to corporate networks</li>
+                            <li>Client portals and sensitive applications</li>
+                            <li>Financial systems and payment processing interfaces</li>
+                        </ul>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-3">
+                            We support multiple MFA methods including TOTP authenticator apps, SMS codes, hardware tokens, and biometric authentication.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">4.3 Identity and Access Management (IAM)</h3>
+                        <div class="bg-slate-50 dark:bg-tsl-dark rounded-lg p-4 space-y-3">
+                            <p class="text-slate-700 dark:text-slate-300"><strong>Single Sign-On (SSO):</strong> Centralized authentication for internal applications reducing password fatigue</p>
+                            <p class="text-slate-700 dark:text-slate-300"><strong>Role-Based Access Control (RBAC):</strong> Permissions assigned based on organizational roles and responsibilities</p>
+                            <p class="text-slate-700 dark:text-slate-300"><strong>Access Logging:</strong> All access attempts, successful and failed, are logged and monitored</p>
+                            <p class="text-slate-700 dark:text-slate-300"><strong>Session Management:</strong> Automatic session timeouts, secure session tokens, and session invalidation controls</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">4.4 Physical Security</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Our offices and data centers employ physical security controls including: biometric access systems, 24/7 security personnel, CCTV surveillance, visitor logging and escort policies, secure equipment disposal procedures, and restricted access zones for sensitive operations.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Network Security -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="network" class="w-6 h-6 text-tsl-gold"></i>
+                    5. Network Security
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="shield" class="w-6 h-6 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Firewalls</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Next-generation firewalls with intrusion prevention, deep packet inspection, and application-layer filtering</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="eye" class="w-6 h-6 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">IDS/IPS</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Intrusion Detection and Prevention Systems for real-time threat detection and automatic blocking</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="filter" class="w-6 h-6 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">DDoS Protection</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Cloud-based DDoS mitigation services protecting against volumetric and application-layer attacks</p>
+                    </div>
+                    
+                    <div class="border border-slate-200 dark:border-white/10 rounded-lg p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="divide" class="w-6 h-6 text-tsl-green"></i>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Network Segmentation</h4>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">Isolated network zones separating production, development, and administrative networks</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">Vulnerability Scanning</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Automated weekly network vulnerability scans identify misconfigurations, missing patches, and security weaknesses. Critical vulnerabilities are remediated within 24 hours.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">Wireless Security</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Enterprise Wi-Fi networks use WPA3 encryption, 802.1X authentication, network isolation for guest access, and regular rogue access point detection.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Application Security -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="code" class="w-6 h-6 text-tsl-gold"></i>
+                    6. Application Security
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">Secure Development Lifecycle (SDL)</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                            Security is integrated throughout our development process:
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Requirements Analysis</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Threat Modeling</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Secure Coding</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Code Review</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Security Testing</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Penetration Testing</span>
+                            <span class="px-3 py-1 bg-tsl-gold/10 text-tsl-gold rounded-full text-sm font-semibold">Deployment Security</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">Code Security Measures</h4>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Static Application Security Testing (SAST) integrated into CI/CD pipelines</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Dynamic Application Security Testing (DAST) for runtime vulnerability detection</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Software Composition Analysis (SCA) for third-party dependency vulnerabilities</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Mandatory peer code reviews before merging to production branches</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Input validation, output encoding, and parameterized queries to prevent injection attacks</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <span>Content Security Policy (CSP) headers and CORS configuration</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">API Security</h4>
+                        <p class="text-slate-700 dark:text-slate-300">All APIs implement OAuth 2.0/JWT authentication, rate limiting to prevent abuse, request validation and sanitization, API versioning for backward compatibility, and comprehensive logging of API access and usage patterns.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Monitoring and Incident Detection -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="activity" class="w-6 h-6 text-tsl-gold"></i>
+                    7. Security Monitoring and Threat Detection
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">7.1 Security Information and Event Management (SIEM)</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Our SIEM system aggregates and correlates security events from all systems, applications, and network devices. Advanced analytics and machine learning algorithms detect anomalies and potential security incidents in real-time, enabling rapid response.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">7.2 24/7 Security Operations Center (SOC)</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                            Our security team monitors systems around the clock:
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <div class="bg-slate-50 dark:bg-tsl-dark rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-tsl-gold mb-2">24/7</div>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Continuous Monitoring</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-tsl-dark rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-tsl-gold mb-2">&lt;15min</div>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Incident Response Time</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-tsl-dark rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-tsl-gold mb-2">100%</div>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Event Logging</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">7.3 Log Management</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Comprehensive logging of system access, authentication attempts, administrative actions, data access, configuration changes, and security events. Logs are tamper-proof, encrypted, and retained for 12 months for forensic analysis and compliance auditing.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">7.4 Threat Intelligence</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We subscribe to global threat intelligence feeds, participate in information sharing communities, and maintain awareness of emerging threats. Our defenses are continuously updated based on the latest threat landscape.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Incident Response -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-tsl-gold"></i>
+                    8. Incident Response Procedures
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">8.1 Incident Response Plan</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                            Our formal incident response plan follows industry best practices:
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold">1</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Identification</h4>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Detect and confirm security incidents through monitoring, alerts, or reports</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500 font-bold">2</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Containment</h4>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Isolate affected systems to prevent spread and limit damage</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 font-bold">3</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Eradication</h4>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Remove threat actors, malware, and vulnerabilities from environment</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold">4</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Recovery</h4>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Restore systems and services to normal operations with enhanced security</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 font-bold">5</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Lessons Learned</h4>
+                                    <p class="text-slate-700 dark:text-slate-300 text-sm">Post-incident review to improve security posture and prevent recurrence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">8.2 Incident Communication</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            In the event of a security incident affecting client data, we commit to notifying affected parties within 72 hours as required by NDPR. Communications include incident description, data potentially impacted, mitigation measures taken, and recommendations for affected users.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">8.3 Business Continuity and Disaster Recovery</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We maintain comprehensive business continuity plans with Recovery Time Objectives (RTO) of 4 hours and Recovery Point Objectives (RPO) of 1 hour for critical systems. Regular disaster recovery drills ensure plan effectiveness. Geographically distributed backups ensure data availability even in catastrophic scenarios.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. Compliance and Certifications -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="award" class="w-6 h-6 text-tsl-gold"></i>
+                    9. Security Certifications and Compliance
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">9.1 Regulatory Compliance</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                            TSL maintains compliance with:
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="border border-tsl-gold/30 rounded-lg p-4 bg-tsl-gold/5">
+                                <h4 class="font-bold text-slate-900 dark:text-white mb-2">NDPR Compliance</h4>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Full compliance with Nigeria Data Protection Regulation including Data Protection Officer appointment and audit cooperation</p>
+                            </div>
+                            <div class="border border-tsl-gold/30 rounded-lg p-4 bg-tsl-gold/5">
+                                <h4 class="font-bold text-slate-900 dark:text-white mb-2">GDPR Readiness</h4>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">GDPR-compliant data processing for European clients with appropriate safeguards for international transfers</p>
+                            </div>
+                            <div class="border border-tsl-gold/30 rounded-lg p-4 bg-tsl-gold/5">
+                                <h4 class="font-bold text-slate-900 dark:text-white mb-2">PCI DSS</h4>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Payment Card Industry Data Security Standard compliance for payment processing (working towards Level 1 validation)</p>
+                            </div>
+                            <div class="border border-tsl-gold/30 rounded-lg p-4 bg-tsl-gold/5">
+                                <h4 class="font-bold text-slate-900 dark:text-white mb-2">Nigerian Cybercrimes Act</h4>
+                                <p class="text-slate-700 dark:text-slate-300 text-sm">Adherence to Cybercrimes (Prohibition, Prevention, etc.) Act 2015 provisions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">9.2 Security Standards</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Our security program aligns with ISO 27001, NIST Cybersecurity Framework, CIS Controls, and OWASP Application Security Verification Standard (ASVS). We are working towards formal ISO 27001 certification.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">9.3 Third-Party Validation</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We engage independent security firms to conduct annual penetration testing, security assessments, and compliance audits. Audit reports are available to enterprise clients under NDA.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. Security Audits -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="search" class="w-6 h-6 text-tsl-gold"></i>
+                    10. Regular Security Audits and Assessments
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 rounded-full bg-tsl-gold/20 flex items-center justify-center">
+                                <i data-lucide="calendar" class="w-6 h-6 text-tsl-gold"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white mb-2">Internal Security Audits</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Quarterly internal security audits assess compliance with policies, identify gaps, and verify control effectiveness across all departments and systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 rounded-full bg-tsl-gold/20 flex items-center justify-center">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-tsl-gold"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white mb-2">External Penetration Testing</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Annual penetration testing by certified ethical hackers simulates real-world attacks to identify vulnerabilities before malicious actors can exploit them.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 rounded-full bg-tsl-gold/20 flex items-center justify-center">
+                                <i data-lucide="file-check" class="w-6 h-6 text-tsl-gold"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white mb-2">Compliance Audits</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Regular compliance audits verify adherence to NDPR, industry standards, and contractual obligations. Audit trails are maintained for regulatory review.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 rounded-full bg-tsl-gold/20 flex items-center justify-center">
+                                <i data-lucide="code-2" class="w-6 h-6 text-tsl-gold"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white mb-2">Code Security Reviews</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Security-focused code reviews for all production releases, with emphasis on high-risk changes and new features. Automated scanning integrated into development workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 11. Vulnerability Disclosure -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="bug" class="w-6 h-6 text-tsl-gold"></i>
+                    11. Responsible Vulnerability Disclosure Program
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">11.1 Security Researcher Program</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                            We welcome and encourage responsible disclosure of security vulnerabilities. Security researchers who discover potential issues are invited to report them confidentially to our security team.
+                        </p>
+                        
+                        <div class="bg-gradient-to-br from-tsl-green/10 to-tsl-gold/10 rounded-lg p-6 border border-tsl-green/20">
+                            <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+                                <i data-lucide="mail" class="w-5 h-5 text-tsl-green"></i>
+                                How to Report a Vulnerability
+                            </h4>
+                            <div class="space-y-2 text-slate-700 dark:text-slate-300">
+                                <p><strong>Email:</strong> <a href="mailto:security@thehackitectsolutions.com" class="text-tsl-green hover:text-tsl-gold transition-colors">security@thehackitectsolutions.com</a></p>
+                                <p><strong>PGP Key:</strong> Available upon request for encrypted communications</p>
+                                <p><strong>Response Time:</strong> Initial acknowledgment within 48 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">11.2 What to Include in Your Report</h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                            <li>Detailed description of the vulnerability</li>
+                            <li>Steps to reproduce the issue</li>
+                            <li>Potential impact and severity assessment</li>
+                            <li>Proof-of-concept (if applicable and safe)</li>
+                            <li>Any suggested mitigation or remediation</li>
+                            <li>Your contact information for follow-up</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">11.3 Our Commitments</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <p class="text-slate-700 dark:text-slate-300">Acknowledge receipt of your report within 48 hours</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <p class="text-slate-700 dark:text-slate-300">Provide regular updates on remediation progress</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <p class="text-slate-700 dark:text-slate-300">Credit researchers in our security advisories (with permission)</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <p class="text-slate-700 dark:text-slate-300">Not pursue legal action against researchers acting in good faith</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                                <p class="text-slate-700 dark:text-slate-300">Consider bug bounty rewards for qualifying vulnerabilities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">11.4 Responsible Disclosure Guidelines</h3>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                            We request that security researchers:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                            <li>Report vulnerabilities privately before public disclosure</li>
+                            <li>Allow reasonable time for remediation (typically 90 days)</li>
+                            <li>Avoid accessing, modifying, or deleting user data</li>
+                            <li>Avoid service disruption or degradation</li>
+                            <li>Do not exploit vulnerabilities beyond proof-of-concept</li>
+                            <li>Respect user privacy and data confidentiality</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">11.5 Vulnerability Severity Classification</h3>
+                        <div class="grid md:grid-cols-4 gap-3">
+                            <div class="border-2 border-red-500 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-red-500 mb-1">Critical</div>
+                                <div class="text-sm text-slate-700 dark:text-slate-300">24hr Response</div>
+                            </div>
+                            <div class="border-2 border-orange-500 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-orange-500 mb-1">High</div>
+                                <div class="text-sm text-slate-700 dark:text-slate-300">72hr Response</div>
+                            </div>
+                            <div class="border-2 border-yellow-500 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-yellow-500 mb-1">Medium</div>
+                                <div class="text-sm text-slate-700 dark:text-slate-300">7d Response</div>
+                            </div>
+                            <div class="border-2 border-blue-500 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-500 mb-1">Low</div>
+                                <div class="text-sm text-slate-700 dark:text-slate-300">30d Response</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. Security Training -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="graduation-cap" class="w-6 h-6 text-tsl-gold"></i>
+                    12. Employee Security Training and Awareness
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    Security is everyone's responsibility. All TSL employees undergo comprehensive security training:
+                </p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="user-plus" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Onboarding Security Training</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Mandatory security orientation for all new employees covering policies, best practices, and responsibilities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="refresh-cw" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Annual Security Refresher</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Yearly training updates on emerging threats, policy changes, and security best practices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Phishing Simulation</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Regular simulated phishing campaigns to test and improve employee awareness and reporting</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="code" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Secure Coding Training</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Specialized training for developers on secure coding practices and vulnerability prevention</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="shield-alert" class="w-5 h-5 text-tsl-gold flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Incident Response Drills</h4>
+                            <p class="text-slate-700 dark:text-slate-300">Tabletop exercises and simulations to ensure team readiness for security incidents</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13. Policy Updates -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="refresh-cw" class="w-6 h-6 text-tsl-gold"></i>
+                    13. Policy Review and Updates
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    This Security Policy is reviewed and updated at least annually or whenever significant changes occur in our technology environment, threat landscape, or regulatory requirements. All material changes will be communicated to stakeholders.
+                </p>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Policy version history and change logs are maintained for audit purposes. The current version is always available on our website with effective date clearly indicated.
+                </p>
+            </section>
+
+            <!-- 14. Contact Information -->
+            <section class="mb-12 bg-gradient-to-br from-blue-500/10 to-tsl-gold/10 rounded-2xl p-8 border border-blue-500/20">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="mail" class="w-6 h-6 text-tsl-gold"></i>
+                    14. Security Contact Information
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
+                    For security-related inquiries, vulnerability reports, or incident notifications:
+                </p>
+                
+                <div class="bg-white dark:bg-tsl-dark rounded-xl p-6 space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="building" class="w-5 h-5 text-tsl-gold mt-1"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Thehackitect Solutions Limited</p>
+                            <p class="text-slate-700 dark:text-slate-300">Company Registration: RC 7234567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="shield" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Security Team:</p>
+                            <a href="mailto:security@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                security@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bug" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Vulnerability Reports:</p>
+                            <a href="mailto:vulnerabilities@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                vulnerabilities@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="alert-triangle" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Security Incidents (24/7):</p>
+                            <a href="mailto:incidents@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                incidents@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="user-check" class="w-5 h-5 text-tsl-gold mt-1"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Chief Information Security Officer (CISO):</p>
+                            <a href="mailto:ciso@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                ciso@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Emergency Hotline:</p>
+                            <p class="text-slate-700 dark:text-slate-300">+234 803 633 1318 (24/7)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-tsl-gold mt-1"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Address:</p>
+                            <p class="text-slate-700 dark:text-slate-300">Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-6 text-sm italic">
+                    For PGP-encrypted communications, please request our public key via email. We encourage encrypted reporting of sensitive security vulnerabilities.
+                </p>
+            </section>
+
+            <!-- Commitment Statement -->
+            <section class="bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-4 text-slate-900 dark:text-white">Our Security Commitment</h2>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Thehackitect Solutions Limited is deeply committed to maintaining the highest security standards to protect our clients' trust and data. Security is not a destination but a continuous journey of improvement, adaptation, and vigilance. We invest significantly in people, processes, and technology to stay ahead of evolving threats and maintain our position as a trusted technology partner in Nigeria.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
+                    This policy reflects our dedication to transparency, accountability, and security excellence. We welcome feedback and collaboration from our clients, partners, and the security community to continuously enhance our security posture.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-black pt-24 pb-10 border-t border-slate-200 dark:border-white/10 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-tsl-gold rounded-lg flex items-center justify-center font-bold text-xl text-black">TSL</div>
+                        <span class="font-display font-bold text-2xl text-slate-900 dark:text-white">Thehackitect <span class="text-tsl-gold">Solutions</span></span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 max-w-sm leading-relaxed">
+                        Empowering businesses and individuals through high-speed connectivity, premium software training, and architectural digital solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-slate-900 dark:text-white font-bold mb-6">Legal</h4>
+                    <ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+                        <li><a href="privacy.html" class="hover:text-tsl-gold transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-tsl-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="security.html" class="hover:text-tsl-gold transition-colors">Security Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-slate-900 dark:text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="zap" class="w-4 h-4 text-tsl-gold"></i>
+                            contact@tsl.com
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="globe" class="w-4 h-4 text-tsl-gold"></i>
+                            Lagos, Nigeria
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-tsl-gold"></i>
+                            +234 803 633 1318
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-600 text-sm">
+                <p>&copy; 2024 Thehackitect Solutions Limited (RC 7234567). All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-tsl-gold transition-colors">Privacy</a>
+                    <a href="terms.html" class="hover:text-tsl-gold transition-colors">Terms</a>
+                    <a href="security.html" class="hover:text-tsl-gold transition-colors">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.classList.toggle('dark', currentTheme === 'dark');
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            lucide.createIcons();
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
