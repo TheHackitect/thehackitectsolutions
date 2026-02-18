@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Thehackitect Solutions Limited</title>
+    
+    <meta name="description" content="Terms of Service for Thehackitect Solutions Limited. Understand your rights and responsibilities when using our services.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tsl: {
+                            dark: '#020617',
+                            darker: '#010409',
+                            gold: '#fbbf24',
+                            green: '#10b981',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-tsl-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-tsl-dark/90 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-3 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-tsl-gold to-yellow-600 rounded-lg flex items-center justify-center font-bold text-xl text-black shadow-lg shadow-tsl-gold/20 overflow-hidden relative group">
+                    <img src="Logo.png" class="w-full h-full object-cover" alt="TSL Logo" />
+                </div>
+                <span class="font-display font-bold text-xl tracking-tight text-slate-900 dark:text-white hidden md:block">
+                    Thehackitect <span class="text-tsl-gold">Solutions</span>
+                </span>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-tsl-gold dark:hover:text-tsl-gold transition-colors uppercase tracking-wider">
+                    Home
+                </a>
+                <button id="themeToggle" class="p-2 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            
+            <!-- Header -->
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-tsl-green/10 rounded-full mb-6">
+                    <i data-lucide="file-text" class="w-4 h-4 text-tsl-green"></i>
+                    <span class="text-sm font-semibold text-tsl-green uppercase tracking-wider">Legal Agreement</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-display font-bold mb-6 text-slate-900 dark:text-white">
+                    Terms of Service
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-4">
+                    Thehackitect Solutions Limited (RC 7234567)
+                </p>
+                <p class="text-slate-600 dark:text-slate-400">
+                    <strong>Effective Date:</strong> January 1, 2024<br>
+                    <strong>Last Updated:</strong> January 1, 2024
+                </p>
+            </div>
+
+            <!-- Introduction -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-4 text-slate-900 dark:text-white">Introduction</h2>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    Welcome to Thehackitect Solutions Limited ("TSL," "we," "us," or "our"). These Terms of Service ("Terms") constitute a legally binding agreement between you (the "Client," "User," or "you") and Thehackitect Solutions Limited, a company duly registered under the laws of the Federal Republic of Nigeria with Registration Number RC 7234567.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    By accessing our website at thehackitectsolutions.com, engaging our services, or entering into any contractual arrangement with TSL, you acknowledge that you have read, understood, and agree to be bound by these Terms, our Privacy Policy, and any additional terms applicable to specific services.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed font-semibold">
+                    IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE OUR SERVICES.
+                </p>
+            </section>
+
+            <!-- 1. Acceptance of Terms -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="check-circle" class="w-6 h-6 text-tsl-gold"></i>
+                    1. Acceptance of Terms
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    By using our services, you represent and warrant that:
+                </p>
+                
+                <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                    <li>You are at least 18 years of age or have reached the age of majority in your jurisdiction</li>
+                    <li>You have the legal capacity to enter into binding contracts</li>
+                    <li>If representing an organization, you have the authority to bind that entity to these Terms</li>
+                    <li>You will comply with all applicable laws and regulations of the Federal Republic of Nigeria</li>
+                    <li>All information provided to us is accurate, current, and complete</li>
+                </ul>
+            </section>
+
+            <!-- 2. Services Description -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="package" class="w-6 h-6 text-tsl-gold"></i>
+                    2. Services Description and Usage
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    Thehackitect Solutions Limited provides the following services:
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-tsl-gold pl-4">
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">2.1 Starlink Connectivity Services</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Authorized Starlink installation, setup, configuration, maintenance, and technical support services. We facilitate high-speed satellite internet connectivity in partnership with SpaceX's Starlink network.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-tsl-gold pl-4">
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">2.2 Educational and Training Programs</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Professional coding bootcamps, web development training, AutoCAD training, Revit architectural software training, Python programming, financial technology courses, and other technology education programs.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-tsl-gold pl-4">
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">2.3 Custom Software Development</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Bespoke software solutions, web application development, mobile application development, trading bots, automation tools, and custom technology solutions tailored to client needs.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-tsl-gold pl-4">
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">2.4 Technology Consulting</h4>
+                        <p class="text-slate-700 dark:text-slate-300">Strategic technology advisory, digital transformation consulting, system architecture design, and technical project management services.</p>
+                    </div>
+                </div>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-6">
+                    We reserve the right to modify, suspend, or discontinue any service at any time with reasonable notice. Service availability may be subject to geographic, technical, or regulatory limitations.
+                </p>
+            </section>
+
+            <!-- 3. User Responsibilities -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="user-check" class="w-6 h-6 text-tsl-gold"></i>
+                    3. User Responsibilities and Acceptable Use
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    As a user of our services, you agree to:
+                </p>
+                
+                <div class="space-y-3">
+                    <div class="flex gap-3">
+                        <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Provide accurate and truthful information during registration and service engagement</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Maintain the confidentiality of your account credentials and be responsible for all activities under your account</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Use services only for lawful purposes in compliance with Nigerian law and international regulations</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Respect intellectual property rights of TSL and third parties</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="check" class="w-5 h-5 text-tsl-green flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Notify us immediately of any unauthorized access or security breaches</p>
+                    </div>
+                </div>
+                
+                <h3 class="text-xl font-bold mb-3 mt-6 text-slate-900 dark:text-white">Prohibited Activities</h3>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    You explicitly agree NOT to:
+                </p>
+                
+                <div class="space-y-3">
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Engage in fraudulent, deceptive, or illegal activities</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Distribute malware, viruses, or harmful code through our services</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Attempt to gain unauthorized access to our systems, networks, or other users' accounts</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Use automated systems to scrape, data mine, or extract information without authorization</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Interfere with or disrupt service operations or infrastructure</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Resell or redistribute services without explicit written authorization</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"></i>
+                        <p class="text-slate-700 dark:text-slate-300">Violate any applicable export control or sanctions regulations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Payment Terms -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="credit-card" class="w-6 h-6 text-tsl-gold"></i>
+                    4. Payment Terms and Billing
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">4.1 Fees and Pricing</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Service fees are specified in individual service agreements, quotations, or on our website. All prices are quoted in Nigerian Naira (NGN) or US Dollars (USD) as applicable. Prices are subject to change with 30 days' advance notice. Changes do not affect existing contracts or prepaid services.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">4.2 Payment Methods</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We accept payment via bank transfer, credit/debit cards, mobile money, and other approved payment methods. Payment processing is handled securely by third-party payment processors subject to their terms and conditions.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">4.3 Payment Terms</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Unless otherwise specified in your service agreement:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4 mt-2">
+                            <li>Training programs require full payment upon registration or according to installment plans</li>
+                            <li>Starlink installations require a deposit before commencement with balance due upon completion</li>
+                            <li>Custom software development projects follow milestone-based payments as outlined in project agreements</li>
+                            <li>Recurring services are billed in advance on a monthly, quarterly, or annual basis</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">4.4 Late Payments</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Payments are due within the period specified in your invoice (typically 7-14 days). Late payments may incur interest charges of 5% per month or the maximum rate permitted by Nigerian law, whichever is lower. We reserve the right to suspend services for accounts with overdue balances exceeding 30 days.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">4.5 Taxes</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            All fees are exclusive of applicable taxes including Value Added Tax (VAT), withholding tax, and any other taxes, duties, or charges imposed by Nigerian authorities. You are responsible for all applicable taxes unless you provide valid tax exemption documentation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Refund Policy -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="rotate-ccw" class="w-6 h-6 text-tsl-gold"></i>
+                    5. Refund and Cancellation Policy
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">5.1 Training Programs</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Full refunds are available if cancellation occurs more than 7 days before the program start date. Cancellations made 3-7 days before start date are eligible for 50% refund. No refunds are issued for cancellations made within 72 hours of program commencement or after the program has started.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">5.2 Starlink Installation Services</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Deposits are refundable if installation cannot be completed due to technical limitations identified during site assessment. Once installation is commenced, deposits are non-refundable. Equipment costs are subject to manufacturer's return policies.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">5.3 Custom Development Projects</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Refunds for development projects are governed by individual project agreements. Generally, completed milestones are non-refundable. If project is terminated before completion, refunds will be calculated based on work completed and expenses incurred.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">5.4 Refund Processing</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Approved refunds are processed within 14-21 business days using the original payment method. Refund requests must be submitted in writing to billing@thehackitectsolutions.com with supporting documentation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Intellectual Property -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="copyright" class="w-6 h-6 text-tsl-gold"></i>
+                    6. Intellectual Property Rights
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">6.1 TSL Intellectual Property</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            All content, materials, software, code, designs, logos, trademarks, training materials, documentation, and other intellectual property provided by TSL remain our exclusive property or that of our licensors. This includes but is not limited to copyrights, trademarks, patents, trade secrets, and proprietary information protected under Nigerian intellectual property law and international treaties.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">6.2 Limited License</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use our services for their intended purposes. This license does not permit reproduction, redistribution, modification, or commercial exploitation without express written permission.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">6.3 Client-Developed Content</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            For custom development projects, intellectual property ownership is defined in individual project agreements. Typically, upon full payment, clients receive ownership of custom deliverables while TSL retains rights to underlying frameworks, tools, and methodologies.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">6.4 Training Materials</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Training materials, course content, and educational resources are provided for personal learning purposes only. Participants may not reproduce, distribute, publicly display, or create derivative works without authorization.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Warranties and Disclaimers -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="alert-triangle" class="w-6 h-6 text-tsl-gold"></i>
+                    7. Warranties and Disclaimers
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">7.1 Service Warranties</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We warrant that services will be performed with reasonable care and skill in accordance with industry standards. For Starlink installations, we guarantee workmanship for 90 days from installation date. Software development projects include warranty periods as specified in project agreements.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white uppercase">7.2 Disclaimer of Warranties</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            EXCEPT AS EXPRESSLY PROVIDED, OUR SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WE DO NOT WARRANT THAT SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">7.3 Third-Party Services</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Starlink connectivity services depend on SpaceX's satellite network. We are not responsible for network performance, outages, or limitations beyond our control. Third-party software, tools, or services provided as part of our solutions are subject to their respective warranties and terms.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Limitation of Liability -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="shield-alert" class="w-6 h-6 text-tsl-gold"></i>
+                    8. Limitation of Liability
+                </h2>
+                
+                <div class="bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800 rounded-lg p-6">
+                    <h4 class="font-bold mb-3 text-slate-900 dark:text-white uppercase">Important Limitation</h4>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+                        TO THE MAXIMUM EXTENT PERMITTED BY NIGERIAN LAW:
+                    </p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                        <li>TSL SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST DATA, BUSINESS INTERRUPTION, OR OTHER INTANGIBLE LOSSES</li>
+                        <li>OUR TOTAL LIABILITY FOR ANY CLAIM ARISING FROM SERVICES SHALL NOT EXCEED THE AMOUNT PAID BY YOU FOR THE SPECIFIC SERVICE GIVING RISE TO THE CLAIM IN THE 12 MONTHS PRECEDING THE CLAIM</li>
+                        <li>WE ARE NOT LIABLE FOR DELAYS, FAILURES, OR DISRUPTIONS CAUSED BY CIRCUMSTANCES BEYOND OUR REASONABLE CONTROL, INCLUDING FORCE MAJEURE EVENTS, GOVERNMENT ACTIONS, NATURAL DISASTERS, TELECOMMUNICATIONS FAILURES, OR THIRD-PARTY SERVICE INTERRUPTIONS</li>
+                    </ul>
+                    
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
+                        Some jurisdictions do not allow limitation of liability for certain damages. In such cases, our liability is limited to the greatest extent permitted by law.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 9. Indemnification -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="shield" class="w-6 h-6 text-tsl-gold"></i>
+                    9. Indemnification
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    You agree to indemnify, defend, and hold harmless Thehackitect Solutions Limited, its officers, directors, employees, agents, affiliates, and partners from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from:
+                </p>
+                
+                <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4 mt-4">
+                    <li>Your use or misuse of our services</li>
+                    <li>Your violation of these Terms or any applicable laws</li>
+                    <li>Your infringement of any intellectual property or other rights of third parties</li>
+                    <li>Any content or data you submit, post, or transmit through our services</li>
+                    <li>Your negligent or willful misconduct</li>
+                </ul>
+            </section>
+
+            <!-- 10. Dispute Resolution -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="scale" class="w-6 h-6 text-tsl-gold"></i>
+                    10. Dispute Resolution and Arbitration
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">10.1 Informal Resolution</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Before initiating formal proceedings, parties agree to attempt good faith negotiation to resolve disputes. Written notice of the dispute must be sent to legal@thehackitectsolutions.com. We will work collaboratively to reach an amicable resolution within 30 days.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">10.2 Mediation</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            If informal resolution fails, parties agree to submit the dispute to mediation conducted by a mutually agreed mediator or mediation institution in Lagos, Nigeria. Mediation costs shall be shared equally unless otherwise agreed.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">10.3 Arbitration</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            If mediation does not resolve the dispute within 60 days, the matter shall be finally settled by arbitration under the Arbitration and Conciliation Act of Nigeria. The arbitration shall be conducted in Lagos, Nigeria, by a single arbitrator appointed by mutual agreement or, failing agreement, by the Lagos Court of Arbitration. The arbitration shall be conducted in English. The arbitrator's decision shall be final and binding.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">10.4 Exceptions</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Either party may seek injunctive or equitable relief in court for protection of intellectual property rights or confidential information without first engaging in arbitration.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 11. Termination -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="x-circle" class="w-6 h-6 text-tsl-gold"></i>
+                    11. Termination and Suspension
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">11.1 Termination by You</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            You may terminate services by providing 30 days' written notice. Termination does not relieve you of payment obligations for services already rendered or contractual commitments. Prepaid amounts for incomplete services may be refunded according to our refund policy.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">11.2 Termination by TSL</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We may terminate or suspend your access to services immediately without notice if you:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4 mt-2">
+                            <li>Violate these Terms or any applicable laws</li>
+                            <li>Fail to pay fees when due</li>
+                            <li>Engage in fraudulent or harmful activities</li>
+                            <li>Misuse services in ways that harm TSL, other users, or third parties</li>
+                            <li>Provide false or misleading information</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">11.3 Effect of Termination</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Upon termination, your right to use services ceases immediately. We may delete your data and account information in accordance with our data retention policies. Provisions regarding intellectual property, limitation of liability, indemnification, and dispute resolution survive termination.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. Governing Law -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="book-open" class="w-6 h-6 text-tsl-gold"></i>
+                    12. Governing Law and Jurisdiction
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    These Terms are governed by and construed in accordance with the laws of the Federal Republic of Nigeria, without regard to conflict of law principles. The following Nigerian statutes and regulations apply:
+                </p>
+                
+                <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300 ml-4">
+                    <li>Companies and Allied Matters Act (CAMA) 2020</li>
+                    <li>Nigeria Data Protection Regulation (NDPR) 2019</li>
+                    <li>Cybercrimes (Prohibition, Prevention, etc.) Act 2015</li>
+                    <li>Consumer Protection Framework</li>
+                    <li>Arbitration and Conciliation Act</li>
+                    <li>Relevant provisions of Nigerian Contract Law</li>
+                </ul>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
+                    Subject to the arbitration provisions in Section 10, the courts of Lagos State, Nigeria, shall have exclusive jurisdiction over any disputes arising from these Terms.
+                </p>
+            </section>
+
+            <!-- 13. General Provisions -->
+            <section class="mb-12 bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="file-text" class="w-6 h-6 text-tsl-gold"></i>
+                    13. General Provisions
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.1 Entire Agreement</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            These Terms, together with our Privacy Policy and any service-specific agreements, constitute the entire agreement between you and TSL regarding the use of our services, superseding any prior agreements.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.2 Amendment</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            We reserve the right to modify these Terms at any time. Material changes will be notified via email or website notice at least 30 days before effectiveness. Continued use of services after changes constitutes acceptance. If you disagree with modifications, you may terminate services.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.3 Severability</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, such provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.4 Waiver</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Failure by TSL to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision. Any waiver must be in writing and signed by an authorized representative of TSL.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.5 Assignment</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            You may not assign or transfer these Terms or your rights hereunder without our prior written consent. We may assign these Terms without restriction. Any attempted unauthorized assignment is void.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.6 Force Majeure</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Neither party shall be liable for failure or delay in performance due to causes beyond reasonable control, including acts of God, war, terrorism, civil unrest, government actions, pandemics, natural disasters, or telecommunications failures.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.7 Notices</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            All notices under these Terms must be in writing and delivered to the addresses specified in Section 14. Notices to you may be sent to the email address provided during registration. You are responsible for maintaining accurate contact information.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2 text-slate-900 dark:text-white">13.8 Relationship of Parties</h4>
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            These Terms do not create any agency, partnership, joint venture, employment, or franchise relationship between you and TSL. You have no authority to bind TSL or make commitments on our behalf.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14. Contact Information -->
+            <section class="mb-12 bg-gradient-to-br from-tsl-green/10 to-tsl-gold/10 rounded-2xl p-8 border border-tsl-green/20">
+                <h2 class="text-2xl font-display font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                    <i data-lucide="mail" class="w-6 h-6 text-tsl-gold"></i>
+                    14. Contact Information
+                </h2>
+                
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
+                    For questions, concerns, or notices regarding these Terms of Service, please contact us:
+                </p>
+                
+                <div class="bg-white dark:bg-tsl-dark rounded-xl p-6 space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="building" class="w-5 h-5 text-tsl-gold mt-1"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Thehackitect Solutions Limited</p>
+                            <p class="text-slate-700 dark:text-slate-300">Company Registration: RC 7234567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">General Inquiries:</p>
+                            <a href="mailto:contact@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                contact@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="scale" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Legal Department:</p>
+                            <a href="mailto:legal@thehackitectsolutions.com" class="text-tsl-gold hover:text-tsl-green transition-colors">
+                                legal@thehackitectsolutions.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-tsl-gold mt-1"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Registered Address:</p>
+                            <p class="text-slate-700 dark:text-slate-300">Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-tsl-gold"></i>
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-white">Phone:</p>
+                            <p class="text-slate-700 dark:text-slate-300">+234 803 633 1318</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Acknowledgment -->
+            <section class="bg-white dark:bg-tsl-darker rounded-2xl p-8 border border-slate-200 dark:border-white/10">
+                <h2 class="text-2xl font-display font-bold mb-4 text-slate-900 dark:text-white">Acknowledgment and Acceptance</h2>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    BY ACCESSING OR USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE IN THEIR ENTIRETY, UNDERSTAND THEM, AND AGREE TO BE LEGALLY BOUND BY THEM.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    If you are entering into these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind such entity to these Terms, and "you" refers to such entity.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-black pt-24 pb-10 border-t border-slate-200 dark:border-white/10 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-tsl-gold rounded-lg flex items-center justify-center font-bold text-xl text-black">TSL</div>
+                        <span class="font-display font-bold text-2xl text-slate-900 dark:text-white">Thehackitect <span class="text-tsl-gold">Solutions</span></span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 max-w-sm leading-relaxed">
+                        Empowering businesses and individuals through high-speed connectivity, premium software training, and architectural digital solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-slate-900 dark:text-white font-bold mb-6">Legal</h4>
+                    <ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+                        <li><a href="privacy.html" class="hover:text-tsl-gold transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-tsl-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="security.html" class="hover:text-tsl-gold transition-colors">Security Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-slate-900 dark:text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="zap" class="w-4 h-4 text-tsl-gold"></i>
+                            contact@tsl.com
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="globe" class="w-4 h-4 text-tsl-gold"></i>
+                            Lagos, Nigeria
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-tsl-gold"></i>
+                            +234 803 633 1318
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-600 text-sm">
+                <p>&copy; 2024 Thehackitect Solutions Limited (RC 7234567). All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-tsl-gold transition-colors">Privacy</a>
+                    <a href="terms.html" class="hover:text-tsl-gold transition-colors">Terms</a>
+                    <a href="security.html" class="hover:text-tsl-gold transition-colors">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.classList.toggle('dark', currentTheme === 'dark');
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            lucide.createIcons();
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
